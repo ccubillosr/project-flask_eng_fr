@@ -1,20 +1,37 @@
-<html>
-    <link rel="stylesheet" href="./static/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta viewport="width=device-width, initial-scale=1.0">
+    <title>Translation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="./static/mywebscript.js"></script>
-    <div class="card">
+</head>
+<div class="card">
     <div class="card-body">
-        <div class="mb-3">
-            <label class="form-label" label-for="textToTranslate">Text to be translated</label>
-            <input type="textarea" class="form-control" id="textToTranslate">
-        </div>
-    
-        <div style="padding: 25px 25px 25px 25px;">
-            <button onclick="translateToFrench()" class="btn btn-secondary">Translate to French</button>        
-            <button onclick="translateToEnglish()" class="btn btn-secondary">Translate to English</button>        
-        </div>
-    
-        <div id="translated_text" style="padding: 25px 25px 25px 25px;"></div>
-            <input type="textarea" class="form-control" id="textTranslated">
-        </div>
-  </div>
+        <table>
+        <tr class="mb-3">
+            <td colspan="2">
+                <label class="form-label">Text to be translated</label>
+                <input type="textarea" class="form-control" id="textToTranslate" title="TextoaTraducir">
+            </td>
+        </tr>
+        <tr class="form-group">
+            <td>
+                <!--<button type="button" onclick="translateToFrench()" class="btn btn-secondary" title="ToFrench">Translate to French</button>-->        
+                <button type="button" class="btn btn-secondary" title="ToFrench">Translate to French</button>        
+            </td>
+            <td>
+                <!--<button type="button" onclick="translateToEnglish()" class="btn btn-secondary" title="ToEnglish">Translate to English</button>-->
+                <button type="button"  class="btn btn-secondary" title="ToEnglish">Translate to English</button>        
+            </td>
+        </tr>
+        <tr class="mb-3">
+            <td colspan="2">
+                <input type="textarea" class="form-control" id="textTranslated" title="TextoTraducido">
+            </td>
+        </tr>
+        <table>
+    </div>
+</div>
 </html>
